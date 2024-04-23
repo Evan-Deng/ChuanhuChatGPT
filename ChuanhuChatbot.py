@@ -426,7 +426,7 @@ with gr.Blocks(theme=small_and_beautiful_theme) as demo:
                     with gr.Tab(label=i18n("关于"), elem_id="about-tab"):
                         gr.Markdown(
                             '<img alt="Chuanhu Chat logo" src="file=web_assets/icon/any-icon-512.png" style="max-width: 144px;">')
-                        gr.Markdown("# "+i18n("川虎Chat"))
+                        gr.Markdown("# "+i18n("昊达Chat"))
                         gr.HTML(get_html("footer.html").format(
                             versions=versions_html()), elem_id="footer")
                         gr.Markdown(CHUANHU_DESCRIPTION, elem_id="description")
@@ -439,7 +439,7 @@ with gr.Blocks(theme=small_and_beautiful_theme) as demo:
                 with gr.Tabs(elem_id="chuanhu-training-tabs"):
                     with gr.Tab(label="OpenAI "+i18n("微调")):
                         openai_train_status = gr.Markdown(label=i18n("训练状态"), value=i18n(
-                            "查看[使用介绍](https://github.com/GaiZhenbiao/ChuanhuChatGPT/wiki/使用教程#微调-gpt-35)"))
+                            "查看[使用介绍](https://github.com/Evan-Deng/ChuanhuChatGPT/wiki/使用教程#微调-gpt-35)"))
 
                         with gr.Tab(label=i18n("准备数据集")):
                             dataset_previewjson = gr.JSON(
@@ -477,7 +477,7 @@ with gr.Blocks(theme=small_and_beautiful_theme) as demo:
                     updatingMsg_i18n=i18n("正在尝试更新..."),
                     updateSuccess_i18n=i18n("更新成功，请重启本程序"),
                     updateFailure_i18n=i18n(
-                        "更新失败，请尝试[手动更新](https://github.com/GaiZhenbiao/ChuanhuChatGPT/wiki/使用教程#手动更新)"),
+                        "更新失败，请尝试[手动更新](https://github.com/Evan-Deng/ChuanhuChatGPT/wiki/使用教程#手动更新)"),
                     regenerate_i18n=i18n("重新生成"),
                     deleteRound_i18n=i18n("删除这轮问答"),
                     renameChat_i18n=i18n("重命名该对话"),
@@ -806,7 +806,7 @@ with gr.Blocks(theme=small_and_beautiful_theme) as demo:
         js='(a,b)=>{return bgSelectHistory(a,b);}'
     )
 # 默认开启本地服务器，默认可以直接从IP访问，默认不创建公开分享链接
-demo.title = i18n("川虎Chat 🚀")
+demo.title = i18n("昊达Chat 🚀")
 
 if __name__ == "__main__":
     reload_javascript()
