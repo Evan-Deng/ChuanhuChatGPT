@@ -389,7 +389,7 @@ with gr.Blocks(theme=small_and_beautiful_theme) as demo:
                             elem_classes="no-container",
                         )
                         single_turn_checkbox = gr.Checkbox(label=i18n(
-                            "单轮对话"), value=False, elem_classes="switch-checkbox", elem_id="gr-single-session-cb", visible=False)
+                            "单轮对话"), value=True, elem_classes="switch-checkbox", elem_id="gr-single-session-cb", visible=False)
                         # checkUpdateBtn = gr.Button(i18n("🔄 检查更新..."), visible=check_update)
 
                         logout_btn = gr.Button("Logout", link="/logout")
